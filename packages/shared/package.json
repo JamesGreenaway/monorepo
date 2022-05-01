@@ -10,10 +10,5 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.6.4"
-  },
-  "devDependencies": {
-    "client": "^0.1.0",
-    "husky": "^7.0.4",
-    "server": "^1.0.0"
   }
 }
