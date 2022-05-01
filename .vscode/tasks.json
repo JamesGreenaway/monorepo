@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"label": "build:server",
+			"script": "server",
+			"group": "build",
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"type": "npm",
+			"label": "build:client",
+			"script": "client",
+			"group": "build",
+			"presentation": {
+				"group": "groupA"
+			}
+		},
+		{
+			"label": "build",
+			"dependsOn": [
+				"build:server",
+				"build:client"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
