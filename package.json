@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"server": "npm run start -w @monorepo/server",
-		"client": "npm run start -w @monorepo/client",
+		"server": "npm run dev -w @monorepo/server",
+		"client": "npm run dev -w @monorepo/client",
 		"prepare": "husky install",
 		"test:server": "npm run test -w @monorepo/server --",
 		"test:client": "npm run test -w @monorepo/client --"
