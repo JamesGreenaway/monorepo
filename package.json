@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"server": "npm run start -w server",
-		"client": "npm run start -w client"
+		"client": "npm run start -w client",
+		"prepare": "husky install"
 	},
 	"author": "",
 	"license": "ISC",
@@ -18,6 +19,12 @@
 		"editorconfig": "^0.15.3",
 		"eslint": "^8.14.0",
 		"eslint-config-prettier": "^8.5.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.4.1",
 		"prettier": "2.6.2"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+		"*.{js,jsx,ts,tsx,css,md}": "prettier --write"
 	}
 }
