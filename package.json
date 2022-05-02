@@ -4,9 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"server": "npm run start -w server",
-		"client": "npm run start -w client",
-		"prepare": "husky install"
+		"server": "npm run start -w @monorepo/server",
+		"client": "npm run start -w @monorepo/client",
+		"prepare": "husky install",
+		"test:server": "npm run test -w @monorepo/server --",
+		"test:client": "npm run test -w @monorepo/client --"
 	},
 	"author": "",
 	"license": "ISC",
